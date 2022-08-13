@@ -15,6 +15,11 @@ namespace LinkedList
             list.Add(30);
             list.Add(70);
             list.Display();
+            list = new LinkedList();
+            list.Add2(70);
+            list.Add2(30);
+            list.Add2(56);
+            list.Display();
             Console.ReadLine();
         }
     }
