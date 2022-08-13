@@ -11,28 +11,28 @@ namespace LinkedList
         internal Node head;
        internal void Add(int data)
         {
-            Node node = new Node(data);
-            if (this.head == null)
+          Node node = new Node(data);
+           if (this.head == null)
                 this.head = node;
             else
             {
-                 Node temp = head;
+               Node temp = head;
                 while (temp.next != null)
                 {
                     temp = temp.next;
                 }
                 temp.next = node;
             }
-              Console.WriteLine("{0} inserted into the linked list", node.data);
+            Console.WriteLine("{0} inserted into the linked list", node.data);
         }
-         internal void Add2(int data)
+        internal void Add2(int data)
         {
-              Node node = new Node(data);
-               if (this.head == null)
+             Node node = new Node(data);
+             if (this.head == null)
                 this.head = node;
             else
             {
-                 node.next = head;
+                node.next = head;
                 this.head = node;
             }
              Console.WriteLine("{0} inserted into the linked list", node.data);
@@ -45,11 +45,13 @@ namespace LinkedList
                 Console.WriteLine("Linked list is empty");
                 return;
             }
+             Console.WriteLine("Sequence of LinkedList :-");
              while (temp != null)
             {
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
+            Console.WriteLine();
         }
     }
 }
